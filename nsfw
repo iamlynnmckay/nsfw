@@ -1,0 +1,13 @@
+#!/bin/bash
+
+set -x -o pipefail
+
+___main___() {
+    case "${1}" in
+		"--homebrew")
+			sfw --homebrew
+		;;
+    esac
+}
+
+___main___ ${@:-}
