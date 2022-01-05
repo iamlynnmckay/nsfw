@@ -5,6 +5,9 @@ set -x -o pipefail
 ___main___() {
     case "${1}" in
 		"--homebrew")
+			#
+			git lfs install # @see https://git-lfs.github.com/
+			#
 			sfw --homebrew
 		;;
     esac
