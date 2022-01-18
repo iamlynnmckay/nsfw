@@ -5,8 +5,10 @@ set -x -o pipefail
 ___main___() {
     case "${1}" in
 		"--homebrew")
-			#
+			# install git lfs
 			git lfs install # @see https://git-lfs.github.com/
+			# install jekyll
+			gem install --user-install bundler jekyll
 			#
 			sfw --homebrew
 		;;
